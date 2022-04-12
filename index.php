@@ -1,55 +1,122 @@
-<?php
+<?php 
 
-// Question 01: factors, prime number.
+// Question 01:make a result grade calculato
 
-$given_array =[12,34,2,6,78];
-foreach ($given_array as $key => $number) {
-    $is_prime = true;
-    for( $i =2; $i <= $number-1; $i++) {
-        if($number % $i ==0) {
-            $is_prime =false;
-        }
-    }
+$bangla = 72;
+$english = 82;
+$math = 93;
+$physics = 65;
+$total_marks = $bangla = 72+ $english+$math+$physics;
+$average_mark = $total_marks /4; 
 
-    if ( $is_prime) {
-        echo "$number is a prime number <br>";
-    } else {
-        echo "$number is not a prime number <br>";
-    }
+echo "Average Mark: $average_mark";
+
+echo "<br>";
+$marks =  $average_mark;
+
+if( $marks <= 32 ){
+    echo "Result :F Grade";
+}elseif( ($marks >= 33) && ($marks <= 39) ){
+    echo "Result  Grade";
+}elseif( ($marks >= 40) && ($marks <= 49) ){
+    echo "Result :C Grade";
+}elseif( ($marks >= 50) && ($marks <= 59) ){
+    echo "Result :B Grade";
+}elseif( ($marks >= 60) && ($marks <= 69) ){
+    echo "Result :A- Grade";
+}elseif( ($marks >= 70) && ($marks <= 79) ){
+    echo "Result :A Grade";
+}elseif( ($marks >= 80) && ($marks <= 100) ){
+    echo "Result :C Grade";
+}else{
+   echo "Invalid Number";
+}
+echo "<br>";
+
+// Question 02: make a game with your bike
+
+$bike_star = 2;
+
+switch ($bike_star) {
+   
+    case '1';
+    echo " Click stop button, bike stop ";
+    break;
+     case '2';
+    echo " Click star button, bike start";
+    break;
+    default:
+    echo " valid erorr";
+    break;
+}
+echo "<br>";
+
+switch ($bike_star) {
+    case '1';
+    echo " Click star button, bike start";
+    break;
+    case '2';
+    echo " Click stop button, bike stop ";
+    break;
+    default:
+    echo " valid erorr";
+    break;
+}
+echo "<br>";
+
+switch ($bike_star) {
+    case '1';
+    echo " Click star button, bike start";
+    break;
+    case '2';
+    echo " Press the break, bike break ";
+    break;
+    default:
+    echo " valid erorr";
+    break;
 }
 
-// Question 02: daraz website and pick any 5 products
+echo "<br>";
 
-$products =['realmi_9i ( ram&rom 4&64 price:5000)' ,'oppo_a16 ( ram&rom 6&128 price:50000)','vivo_y21 ( ram&rom 4&64 price:8000)','poco_m3 ( ram&rom 4&64 price:9000)','motorola_edge ( ram&rom 4&64 price:5000)'
-];
+switch ($bike_star) {
+    case '1';
+    echo " Click star button, bike start";
+    break;
+    case '2';
+    echo " Give the gear, bike move faster and faster ";
+    break;
+    default:
+    echo " valid erorr";
+    break;
+}
+echo "<br>";
 
-foreach ( $products as $name) {
-    echo $name;
-    echo "<br>";
+switch ($bike_star) {
+    case '1';
+    echo " Click star button, bike start";
+    break;
+    case '2';
+    echo "Press the signal button,bike shows a signal light";
+    break;
+    default:
+    echo " valid erorr";
+    break;
+}
+echo "<br>";
+
+switch ($bike_star) {
+    case '1';
+    echo " Click star button, bike start";
+    break;
+    case '2';
+    echo "Press the headlight button, bike’s headlight will start";
+    break;
+    default:
+    echo " valid erorr";
+    break;
 }
 
-// Question 03: maximum valu foreach loop.
 
-$given_array = array(0,10,80,67,60,89,91,56,45,30,95,83,99);
-$max_value = 0;
-
-foreach ($given_array as $key => $number) {
-    if ( $number > $max_value) {
-        $max_value = $number;
-    }
-}
-
-echo "This is our max number $max_value <br>";
-
-// Question 04: this array(0,10,80,67,60,89,91,56,45,30,95,83,99) and print 0 index
-
-$given_array = array(0,10,80,67,60,89,91,56,45,30,95,83,99);
-foreach ($given_array as $key => $number) {
-    if ( $key % 2 ==0) {
-        echo "$number <br>";
-    }
-}
-
-
+	
 
 ?>
